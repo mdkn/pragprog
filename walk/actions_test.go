@@ -13,8 +13,8 @@ func TestFilterOut(t *testing.T) {
 		minSize  int64
 		expected bool
 	}{
-		{"FilterNoExtension", "/testdata/dir.log", "", 0, false},
-		{"FilterExtensionMatch", "testdata/dir.log", ".log", 0, true},
+		{"FilterNoExtension", "testdata/dir.log", "", 0, false},
+		{"FilterExtensionMatch", "testdata/dir.log", ".log", 0, false},
 		{"filterExtensionNoMatch", "testdata/dir.log", ".sh", 0, true},
 		{"FilterExtensionSizeMatch", "testdata/dir.log", ".log", 10, false},
 		{"FilterExtensionSizeNoMatch", "testdata/dir.log", ".log", 20, true},
