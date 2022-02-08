@@ -1,4 +1,4 @@
-module pragprog/mdp.v4
+module pragprog/mdp.v5
 
 go 1.17
 
